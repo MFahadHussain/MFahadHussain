@@ -1,0 +1,76 @@
+# Hospital Star Schema Data Model
+
+## Overview
+
+This repository contains the star schema data model designed for a hospital management system. The model is structured to facilitate efficient querying and reporting of hospital visits, treatments, and patient information.
+
+## Star Schema Design
+
+The star schema consists of one central fact table and several dimension tables:
+
+### Fact Table: `Hospital_Visit_Facts`
+- **Visit_ID**: Unique identifier for each hospital visit (Primary Key)
+- **Patient_ID**: Foreign key linking to the Patient dimension
+- **Doctor_ID**: Foreign key linking to the Doctor dimension
+- **Department_ID**: Foreign key linking to the Department dimension
+- **Date_ID**: Foreign key linking to the Date dimension
+- **Treatment_ID**: Foreign key linking to the Treatment dimension
+- **Diagnosis_ID**: Foreign key linking to the Diagnosis dimension
+- **Cost**: Total cost of the visit
+- **Duration**: Length of stay (in hours/days)
+- **Payment_Method**: Method of payment (e.g., Cash, Insurance)
+
+### Dimension Tables
+
+1. **Patient Dimension**
+   - Patient_ID (Primary Key)
+   - Patient_Name
+   - Age
+   - Gender
+   - Address
+   - Contact_Info
+   - Insurance_Status
+
+2. **Doctor Dimension**
+   - Doctor_ID (Primary Key)
+   - Doctor_Name
+   - Specialization
+   - Years_of_Experience
+   - Contact_Info
+
+3. **Department Dimension**
+   - Department_ID (Primary Key)
+   - Department_Name
+   - Department_Head
+
+4. **Date Dimension**
+   - Date_ID (Primary Key)
+   - Date
+   - Day
+   - Month
+   - Quarter
+   - Year
+   - Day_of_Week
+
+5. **Treatment Dimension**
+   - Treatment_ID (Primary Key)
+   - Treatment_Type
+   - Treatment_Description
+
+6. **Diagnosis Dimension**
+   - Diagnosis_ID (Primary Key)
+   - Diagnosis_Name
+   - Severity
+
+## Usage
+
+This schema can be used to analyze various aspects of hospital operations, including:
+- Patient demographics and treatment history
+- Doctor performance and departmental efficiency
+- Cost analysis and financial reporting
+
+## Getting Started
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/hospital-star-schema.git
