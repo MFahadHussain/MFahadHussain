@@ -186,7 +186,7 @@ AcctFin is not a scaffold — it's a fully wired system with 35+ modules spannin
 
 ### 🕌 ILM — Gamified Islamic Learning Platform
 
-> DataCamp-style active learning for Shia Islamic education, powered by an NLP library engine.
+> DataCamp-style active learning for Islamic education, powered by an NLP library engine.
 
 ILM reimagines how students engage with classical Islamic texts. Instead of passive reading, learners work through structured exercises — fill-in-the-blank, multiple choice, translation challenges, and chain-of-narration drills — with adaptive difficulty and gamified progress tracking.
 
